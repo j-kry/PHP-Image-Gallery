@@ -3,16 +3,16 @@
 
 <div class="deck">
     <?php foreach ($imageTitles as $fileName => $title) : ?>
-    <div class="card">
-        <a href="image.php?<?php echo http_build_query(['image' => $fileName]) ?>">
-            <div class="cardTitle">
-                <h4><?php echo $title ?></h4>
-            </div>
-            <div class="cardBody">
-                <img src="./images/<?php echo $fileName ?>" alt="">
-            </div>
-    </div>
-    </a>
+        <div class="card">
+            <a href="image.php?<?php echo http_build_query(['image' => $fileName]) ?>">
+                <div class="cardTitle">
+                    <h4><?php echo $title ?></h4>
+                </div>
+                <div class="cardBody">
+                    <img src="./images/<?php echo $fileName ?>" alt="">
+                </div>
+        </div>
+        </a>
     <?php endforeach; ?>
 </div>
 
